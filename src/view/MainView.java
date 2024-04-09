@@ -56,6 +56,18 @@ public class MainView extends JFrame{
     }
 
 
+    /**
+     * Zeigt ein Information für den Nutzer in einem Infofenster
+     * @param text - Text der angezeigt werden soll
+     */
+    public void showInfoWindow( String text){
+           JOptionPane.showMessageDialog(this, text, "Information", JOptionPane.ERROR_MESSAGE);
+    }
+
+    public boolean confirmWindow(String text){
+      return JOptionPane.YES_OPTION == JOptionPane.showConfirmDialog(this, text, "Bitte bestätige!",JOptionPane.YES_NO_OPTION);
+    }
+
 
 
 
